@@ -9,6 +9,7 @@ COPY package.json yarn.lock ./
 
 # Install the dependencies using Yarn  
 RUN npm install -g yarn
+RUN yarn install
 
 # Copy the rest of the application code to the working directory  
 COPY . .  
@@ -17,4 +18,4 @@ COPY . .
 EXPOSE 3000  
 
 # Command to run the application  
-CMD ["yarn", "start"]  
+CMD ["yarn","run","dev"]  
