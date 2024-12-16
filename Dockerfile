@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 COPY package.json yarn.lock ./  
 
 # Install the dependencies using Yarn  
-RUN npm install -g yarn
+#RUN npm install -g yarn
 RUN yarn install
 
 # Copy the rest of the application code to the working directory  
